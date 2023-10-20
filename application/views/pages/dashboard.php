@@ -3,7 +3,7 @@
 		<h1 class="h2">Dashboard</h1>
 		<div class="btn-toolbar mb-2 mb-md-0">
 			<div class="btn-group mr-2">
-				<a href="" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus-square"></i> Game</a>
+				<a href="<?= base_url('') ?>games/new" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus-square"></i> Game</a>
 			</div>
 		</div>
 	</div>
@@ -21,21 +21,19 @@
 					<th>Price</th>
 					<th>Developer</th>
 					<th>Release Date</th>
-					<th>Actions</th>
 				</tr>
 			</thead>
 			<tbody>
-				<?php foreach($games as $game) : ?>
-          <tr>
-            <td><?= $game['id'] ?></td>
-            <td><?= $game['name'] ?></td>
-            <td><?= $game['price'] ?></td>
-            <td><?= $game['developer'] ?></td>
-            <td><?= $game['release_date'] ?></td>
-            <td>xxx</td>
-          </tr>
+				<?php foreach ($games as $game) : ?>
+					<tr>
+						<td><?= $game['id'] ?></td>
+						<td><?= $game['name'] ?></td>
+						<td><?= $game['price'] ?></td>
+						<td><?= $game['developer'] ?></td>
+						<td><?= $game['release_date'] ?></td>
+					</tr>
 				<?php endforeach; ?>
-        
+
 			</tbody>
 		</table>
 	</div>
@@ -55,7 +53,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				
+
 			</tbody>
 		</table>
 	</div>
